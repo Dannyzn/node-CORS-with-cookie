@@ -29,6 +29,7 @@
         crossButton.onclick = function() {
             axios({
                 method: "get",
+                withCredentials: true, // ++ 新增
                 url: 'http://localhost:8003/anotherService',
             }).then((res) => {
                 console.log(res)
