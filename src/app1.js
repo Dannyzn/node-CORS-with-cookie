@@ -6,12 +6,15 @@ const app = express()
 // 设置 cookie
 app.get('/login', (req, res) => {
     res.cookie("user", "jay", { maxAge: 2000000, httpOnly: true })
+    // res.setHeader('Access-Control-Allow-Origin', '*');
     res.json({ code: 0, message: "登陆成功" })
 })
 
 // 此接口时 检测 cookie 是否设置成功的 如果设置成功的话 浏览器会自动携带上 cookie
 app.get('/user', (req, res) => {
     // req.headers.cookie: user=jay
+    // res.setHeader('Access-Control-Allow-Origin', '*');
+    const user = req.headers.cookie?.split("=")[1];
     res.json({ code: 0, user })
 })
 
