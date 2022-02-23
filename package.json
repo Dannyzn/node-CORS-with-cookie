@@ -1,0 +1,22 @@
+{
+  "name": "cors-with-cookie",
+  "version": "0.1.0",
+  "description": "主要是研究跨域之后如何携带 cookie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dannyzn/node-CORS-with-cookie.git"
+  },
+  "author": "酒窝 <694518723@qq.com> (https://github.com/Dannyzn)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dannyzn/node-CORS-with-cookie/issues"
+  },
+  "homepage": "https://github.com/Dannyzn/node-CORS-with-cookie#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
